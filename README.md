@@ -1,0 +1,1 @@
+Omo-one Apartments is a one of a kind luxurious resort in the city of Benin built for your relaxation. lodging and enjoyment.
