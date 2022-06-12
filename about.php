@@ -53,7 +53,7 @@
             <hr> -->
             <h3>Get to know us</h3>
             <div class="story">
-                <p id="first_story">Our objective at Windy hill hotels is to bring together our visitor's societies and spirits with our own, communicating enthusiasm and liberality in the food we share. <br><br>
+                <p id="first_story">Our objective at Omo-one is to bring together our visitor's societies and spirits with our own, communicating enthusiasm and liberality in the food we share. <br><br>
                 Omo-one Apartment is a unquely spectacular Apartment, in the heart of Benin city Edo state. In addition to excellent transport links to Omo-one, our Apartment is surrounded by the city centre’s elegant shops, cafés, restaurants, bars, and other tourist sights just a few steps from Our location. Recently, our whole Apartment has undergone a complete renovation.
                     <br><br>
                     

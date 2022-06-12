@@ -128,7 +128,7 @@
                     <div class="taglines">
                         <div class="taglines_note">
                             <h2>We focus on comfort and quality</h2>
-                            <p>There’s no better way to start your day than waking up at Windy Hill</p>
+                            <p>There’s no better way to start your day than waking up at Omo-one</p>
                             
                             <div class="btns">
                                 <!-- <a href="javascript:void(0)" class="showRequest">Schedule an Appointment Now</a> -->
@@ -353,7 +353,7 @@
                     <h2>Room / Suits</h2>
                 </div>
                 <div class="rooms_head" id="head_note">
-                    <p>Our hotel offers over 30 single rooms, double rooms as well as presidential suites</p>
+                    <p>Our hotel offers over 10 single rooms and Apartments from which you can choose from</p>
                     <a href="gallery.php" title="Photos of our rooms">View Gallery</a>
                 </div>
             </div>
