@@ -97,8 +97,8 @@
                             <p>High speed wifi</p>
                         </div>
                         <div class="facility">
-                            <i class="fas fa-bath"></i>
-                            <p>Bathtub with shower</p>
+                            <i class="fas fa-shower"></i>
+                            <p>Shower</p>
                         </div>
                         <!-- <div class="facility">
                             <i class="fas fa-balcony"></i>
@@ -108,10 +108,10 @@
                             <i class="fas fa-bed"></i>
                             <p>King size bed</p>
                         </div>
-                        <div class="facility">
+                        <!-- <div class="facility">
                             <i class="fas fa-coffee"></i>
                             <p>Breakfast included</p>
-                        </div>
+                        </div> -->
                         <div class="facility">
                             <i class="fas fa-couch"></i>
                             <p>Couch</p>

@@ -109,10 +109,10 @@
                             <i class="fas fa-bed"></i>
                             <p>King size bed</p>
                         </div>
-                        <div class="facility">
+                        <!-- <div class="facility">
                             <i class="fas fa-coffee"></i>
                             <p>Breakfast included</p>
-                        </div>
+                        </div> -->
                         <div class="facility">
                             <i class="fas fa-couch"></i>
                             <p>Couch</p>
