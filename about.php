@@ -57,7 +57,7 @@
                 Omo-one Apartment is a unquely spectacular Apartment, in the heart of Benin city Edo state. In addition to excellent transport links to Omo-one, our Apartment is surrounded by the city centre’s elegant shops, cafés, restaurants, bars, and other tourist sights just a few steps from Our location. Recently, our whole Apartment has undergone a complete renovation.
                     <br><br>
                     
-                    All our rooms and apartmens represent the popular modern yet elegant style of international hotels. Each of our rooms with their simple, fresh, and warm style, and welcoming colours meet the latest city design and comfort standards. The stylish interiors of our rooms are completed by LCD television, high-speed wireless internet connection, minibar. Most of our rooms are equipped with queen-size beds. All rooms are non-smoking.<br><br>
+                    All our rooms and apartments represent the popular modern yet elegant style of international hotels. Each of our rooms with their simple, fresh, and warm style, and welcoming colours meet the latest city design and comfort standards. The stylish interiors of our rooms are completed by LCD television, high-speed wireless internet connection, minibar. Most of our rooms are equipped with queen-size beds. All rooms are non-smoking.<br><br>
 
                     <a id="invest_link" href="contact.php" title="contact us">Contact us <i class="fas fa-headset"></i></a>
                 </p>
