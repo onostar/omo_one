@@ -1,6 +1,6 @@
 
 <section id="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.85468325410187!2d5.604537418693614!3d6.306369671704379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3ccc45347a5%3A0x8efc9be4cda567a6!2s3%20Edegbe%20Ave%2C%20Oka%20300102%2C%20Benin%20City!5e0!3m2!1sen!2sng!4v1654966862792!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6755948115688!2d5.6025405142660265!3d6.306283027401164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d39f7464b943%3A0x50db6fbbf4906bbe!2sOmo-one%20Apartment!5e0!3m2!1sen!2sng!4v1655072432538!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 <footer>
         <section class="mainFooter">
