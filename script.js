@@ -1,4 +1,4 @@
-window.onscroll = function(){changeHeader(), displayTotopButton(), displayBooking(), showServices(), displayAbout(),displayPartners(), displaytestimony() /*showRecentWork(), displayCallToAction() */};
+window.onscroll = function(){changeHeader(), displayTotopButton(), displayBooking(), showServices(), displayAbout(), displayVideo(), displayPartners(), displaytestimony() /*showRecentWork(), displayCallToAction() */};
 
 /* change header */
 function changeHeader(){
@@ -16,7 +16,7 @@ function changeHeader(){
 
 /* show services */
 function showServices(){
-    if(document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400){
+    if(document.body.scrollTop > 1600 || document.documentElement.scrollTop > 1600){
         document.getElementById('why_choose').style.display= 'flex';
         
     }
@@ -104,6 +104,16 @@ function displayAbout(){
         document.getElementById('about_us').style.display = 'flex';
     }else{
         document.getElementById('about_us').style.display = 'none';
+    }
+}
+/* display video */
+function displayVideo(){
+    if(document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+        document.getElementById('video_story').style.display = 'block';
+        document.querySelector('#video_story video').autoplay = true;
+    }else{
+        document.getElementById('video_story').style.display = 'none';
+        document.querySelector('#video_story video').pause();
     }
 }
 /* display call to action */

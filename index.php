@@ -213,6 +213,10 @@
                 </div>
             </div>
         </section>
+        <!-- video -->
+        <section id="video_story">
+            <video src="images/omo_one_vid.mp4" poster="images/omo_one.jpeg"controls></video>
+        </section>
         <!-- amenities -->
         <section id="amenities">
             <h3>Amenities</h3>

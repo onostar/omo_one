@@ -959,6 +959,29 @@ main{
     color:green;
     font-size:.8rem;
 }
+/* video section */
+#video_story{
+    display:none;
+    width:80%;
+    height: 500px;
+    margin:40px auto;
+    opacity:0;
+    transform: scale(0);
+    animation:.5s showVideo 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes showVideo{
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+#video_story video{
+    width: 100%;
+    height:100%;
+    /* box-shadow: 2px 2px 2px 2px var(--primaryColor); */
+}
 /* amenities */
 #amenities{
     width:90%;
@@ -4684,6 +4707,13 @@ header i{
     #request_form form .inputss .data i{
         padding:10px;
     }
+    /* video section */
+    #video_story{
+        width:100%;
+        height: auto;
+        opacity:0;
+    }
+
     /* about section */
     /* hero section */
     .whyChoose{
