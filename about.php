@@ -29,7 +29,7 @@
             <div class="about_banner">
                 <div class="slide">
                     <div class="banner_img">
-                        <img src="images/omo_one4.jpeg" alt="windy_hill">
+                        <img src="images/omo_one.jpeg" alt="windy_hill">
                     </div>
                     <div class="taglines">
                         <h2>About us</h2>

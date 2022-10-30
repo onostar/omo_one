@@ -1687,6 +1687,10 @@ covid section
 .intro i{
     color:#fff;
 }
+.invest_img video{
+    width:100%;
+    height:100%;
+}
 /* core service sections */
 #core_service{
     width:80%;
@@ -3660,7 +3664,8 @@ header i{
     font-size:1.5rem;
 }
 .displays{
-    width:50%!important;
+    width:100%;
+    display:none;
     margin:20px auto;
     padding:10px;
 }
@@ -3682,6 +3687,10 @@ header i{
 .displays form{
     width:100%;
     padding:10px;
+}
+.displays h3{
+    color:#fff!important;
+    background:rgb(12, 112, 112)!important;
 }
 .displays form .data{
     display:block;
@@ -4235,6 +4244,146 @@ header i{
     background:var(--primaryColor);
     color:#fff;
 }
+/* gallery */
+#gallery{
+    width:100%;
+    margin:20px auto;
+    scroll-behavior: smooth;
+    /* background:#000; */
+    /* padding:40px; */
+    color:#fff;
+    overflow:hidden;
+}
+#gallery h3{
+    text-align:center;
+    font-weight:bold;
+    color:var(--secondaryColor);
+    /* font-family: "Pacifico"; */
+}
+#gallery h2{
+    text-align:center;
+    font-size:2.3rem;
+}
+#gallery .first_p{
+    text-align:Center;
+    width:70%;
+    margin:10px auto 20px;
+    color:#252424;
+    font-family: "Pacifico";
+    font-size:1.3rem;
+}
+#gallery .plans{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    align-items: center;
+    width:100%;
+    /* overflow-x: scroll; */
+    /* gap:2rem; */
+    /* padding:10px; */
+}
+
+#gallery .plan_form{
+    width:25%;
+    height:300px;
+    background:#fff;
+    box-shadow:2px 2px 2px #c4c4c4;
+    transition: all .2s ease-in-out;
+}
+#gallery .plan_form:hover{
+    transform: scale(1.03);
+}
+#gallery .plan_info{
+    background:rgba(7, 45, 80, .9);
+    padding:20px;
+    text-align: center;
+}
+#gallery .plan_info h3{
+    text-transform: capitalize;
+}
+#gallery .plan_info p{
+    font-weight: bold;
+    font-size:1.5rem;
+    color:#fff;
+}
+#gallery .plan_det{
+    padding:20px;
+}
+#gallery .plans figure{
+    position:relative;
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+#gallery .plans figure .gallery_img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+#gallery .plans figure .gallery_img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+#gallery .plans figure .gallery_img:after{
+    display:none;
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, .8);
+}
+#gallery .plans figcaption{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    margin:auto;
+    padding:10px;
+    /* display:flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:var(--primaryColor);
+    text-align: center;
+    transition: .3s all ease-in-out;
+}
+
+#gallery .plan_form h3{
+    color: #fff!important;
+    text-align:left!important;
+
+}
+#gallery .plans figcaption p{
+    font-size: 1rem;
+}
+#gallery .plan_det li{
+    list-style:none;
+    padding:10px 0;
+}
+#gallery .plan_det a{
+    background:var(--primaryColor);
+    /* border:2px solid var(--secondaryColor); */
+    display:block;
+    padding:15px;
+    color:#fff;
+    width:70%;
+    cursor: pointer;
+}
+#gallery .plan_det a:hover{
+    background:var(--secondaryColor);
+}
+#gallery .plans figure:hover .gallery_img:after, #gallery .plans figure:focus .gallery_img:after, #gallery .plans figure:hover figcaption, #gallery .plans figure:hover figcaption{
+    display:flex;
+}
 /* rooms */
 #roomsMain{
     background:#222;
@@ -4463,6 +4612,80 @@ header i{
     text-transform: capitalize;
     color:#fff;
     font-size:1.1rem;
+}
+.uploaded{
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:.5rem;
+    justify-content: space-between;
+    margin:40px 10px;
+}
+.uploaded figure{
+    width:23%;
+    height:250px;
+    position:relative;
+    border-radius:10px;
+    overflow: hidden;
+    box-shadow:2px 2px 2px var(--primaryColor);
+
+}
+.uploaded figure .photo{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition: .4s all ease-in-out;
+}
+.uploaded figure .photo img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.uploaded figure .photo:after{
+    position:absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, .3)
+}
+.uploaded figure figcaption{
+    position:absolute;
+    top:30%;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+.uploaded figure figcaption h4{
+    font-size:1.1rem;
+    color:#fff!important;
+}
+.uploaded figure figcaption p{
+    /* display:none; */
+    color:#fff;
+    font-size:1rem;
+}
+.uploaded figure figcaption a{
+    color:red;
+}
+.uploaded figure figcaption a i{
+    font-size: 1.5rem;
+}
+.uploaded figure:hover .photo, .uploaded figure:focus .photo{
+    transform: scale(1.4);
+}
+.uploaded figure:hover figcaption h4, .uploaded figure:focus figcaption h4{
+    display:none;
+}
+.uploaded figure:hover figcaption p, .uploaded figure:focus figcaption p{
+    display:none;
+}
+.uploaded figure:hover .photo:after, .uploaded figure:focus .photo:after{
+    background:transparent;
 }
 @media screen and (max-width: 800px){
     #topHeader{
@@ -5348,6 +5571,13 @@ header i{
         height:400px;
         width:100%;
     }
+
+    .invest_img video{
+        width:100%;
+    }
+    .new_vidz{
+        width:95%!important;
+    }
     .intro a{
         margin:20px 0;
     }
@@ -5684,5 +5914,24 @@ header i{
         width:150px;
         height:150px;
         margin:0;
+    }
+    #gallery h2{
+        font-size:1.4rem;
+    }
+    #gallery .plans{
+        flex-wrap:Wrap;
+        gap:.8rem;
+    }
+    #gallery .plan_form{
+        width:48%;
+        height:150px;
+    }
+    #gallery .plan_form h3{
+        font-size:1rem;
+    }
+    #gallery .plans figcaption{
+        position:absolute;
+        top:40%;
+        text-align: center;
     }
 }

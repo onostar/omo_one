@@ -58,11 +58,11 @@
     <main id="roomsMain">
         <section id="room_gallery">
             <div class="room_frame" id="room_frame">
-                <img src="images/bed_room3.jpeg" alt="Apartment">
+                <img src="images/photo6.jpeg" alt="Apartment">
             </div>
             <div class="room_thumbnails">
                 <figure>
-                    <img src="images/sitting_room2.jpeg" alt="Apartment">
+                    <img src="images/photo8.jpeg" alt="Apartment">
                 </figure>
                 <figure>
                     <img src="images/bed_room2.jpeg" alt="Apartment">

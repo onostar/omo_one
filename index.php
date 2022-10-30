@@ -1,6 +1,6 @@
 <?php
     session_start();
-
+    include "controller/connections.php";
 ?>
 
 <!DOCTYPE html>
@@ -84,7 +84,7 @@
             <div class="slides">
                 <div class="slide">
                     <div class="banner_img">
-                        <img src="images/omo_one.jpeg" alt="banner">
+                        <img src="images/photo14.jpeg" alt="banner">
                     </div>
                     <div class="taglines">
                         <div class="taglines_note">
@@ -122,7 +122,7 @@
                     <div class="banner_img">
                         <picture>
                             <source media="(max-width:800px)" srcset="images/bed_room3.jpeg">
-                            <img src="images/bed_room4.jpeg" alt="hotel banner">
+                            <img src="images/photo1.jpeg" alt="hotel banner">
                         </picture>
                     </div>
                     <div class="taglines">
@@ -176,7 +176,7 @@
         <section id="about_us">
             <div class="about_banner">
                 <div class="banner_img">
-                    <img src="images/sitting_room2.jpeg" alt="omo-one apartment">
+                    <img src="images/photo2.jpeg" alt="omo-one apartment">
 
                 </div>
                 <div class="clients">
@@ -213,10 +213,12 @@
                 </div>
             </div>
         </section>
+        
         <!-- video -->
         <section id="video_story">
             <video src="images/omo_one_vid.mp4" poster="images/omo_one.jpeg"controls></video>
         </section>
+       
         <!-- amenities -->
         <section id="amenities">
             <h3>Amenities</h3>
@@ -267,6 +269,19 @@
                 </div>
             </div>
         </section>
+         <!-- introduction of new branch -->
+         <section id="investment" class="new_vidz">
+            <div class="intro">
+                <p>Now available for booking</p>
+                <h2>Omo-one Apartments, Etete</h2>
+                <p>Omo-one Apartments has extended its business of hospitality and comfortability to etete, GRA Benin city. With increased security, comfort, and relaxation.<br> Visit is us now at Mabel Erewa crescent, Etete, GRA Benin city, Edo state</p>
+                <a href="contact.php">Visit us <i class="fa-solid fa-headset"></i></a>
+            </div>
+            <div class="invest_img" id="hero2">
+                <video src="images/omo_one_etete.mp4" poster="images/omo_one5.jpeg"controls></video>
+
+            </div>
+        </section>
         <!-- why choose us -->
         <section id="why_choose">
             <div class="reasons">
@@ -315,7 +330,7 @@
                 </div>
                 <div class="service_box">
                     <div class="service_img">
-                        <img src="images/apartment_entrance2.jpeg" alt="omo-one">
+                        <img src="images/photo10.jpeg" alt="omo-one">
                     </div>
                     <div class="service_note">
                         <i class="fas fa-hotel"></i>
@@ -325,7 +340,7 @@
                 </div>
                 <div class="service_box" id="box3">
                     <div class="service_img">
-                        <img src="images/pool3.jpeg" alt="omo-one">
+                        <img src="images/photo13.jpeg" alt="omo-one">
                     </div>
                     <div class="service_note">
                         <i class="fas fa-building"></i>
@@ -346,6 +361,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- rooms -->
         <section id="rooms">
             <div class="rooms_intro">
@@ -399,7 +415,7 @@
                 <figure>
                     <a href="apartments.php" title="View room details">
                         <div class="room_img">
-                            <img src="images/bed_room3.jpeg" alt="Apartment">
+                            <img src="images/photo6.jpeg" alt="Apartment">
                         </div>
                         <figcaption>
                             <h3>Apartment</h3>
@@ -424,7 +440,7 @@
         <!-- hero 2 -->
         <section class="investment">
             <div class="invest_img" id="invest_img1">
-                <img src="images/pool3.jpeg" alt="restaurant">
+                <img src="images/photo12.jpeg" alt="restaurant">
                 <img src="images/dinning2.jpeg" alt="restaurant">
 
             </div>
@@ -467,109 +483,38 @@
                 <a href="contact.php">Visit us <i class="fa-solid fa-headset"></i></a>
             </div>
             <div class="invest_img" id="hero2">
-                <img src="images/lounge.jpeg" alt="omo one">
+                <img src="images/bar.jpg" alt="omo one">
 
             </div>
         </section>
-        <!-- Gallery -->
-        <Section id="plans">
+        <!-- gallery -->
+        <Section id="gallery">
             <h3 class="plans_title">Our Gallery</h3>
-            <h2>Photos and media</h2>
-            <p class="first_p">Discover some of our exciting scenes</p>
+            <!-- <h2>Photos and media</h2> -->
+            <p class="first_p">Discover some of our Exciting scenes</p>
             <div class="plans">
-                <div class="plan_form" id="plan1">
+                <?php 
+                    $get_photos = $connectdb->prepare("SELECT * FROM gallery ORDER BY post_date DESC LIMIT 8");
+                    $get_photos->execute();
+                    $photos = $get_photos->fetchAll();
+                    foreach($photos as $photo):
+                ?>
+                <div class="plan_form">
                     <figure>
-                        <div class="gal_img">
-                            <img src="images/reception.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Reception</h3>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan2">
-                    <figure>
-                        <div class="gal_img">
-                            <img src="images/omo_one2.jpeg" alt="reception">
-                        </div>
-                        <figcaption>
-                            <h3>Main Building</h3>
-                            
-                        </figcaption>
-                    </figure>
-                    
-                </div>
-                <div class="plan_form" id="plan3">
-                    <figure>
-                        <div class="gal_img">
-                            <img src="images/kitchen2.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Apartment Kitchen</h3>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan4">
-                    <figure>
-                        <div class="gal_img">
-                            <img src="images/lounge.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Lounge/bar</h3>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan1">
-                    <figure>
-                        <div class="gal_img">
-                            <img src="images/single_toilet.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Bathroom</h3>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan2">
-                    <figure>
-                        <div class="gal_img">
-                            <img src="images/bed_room2.jpeg" alt="reception">
-                        </div>
-                        <figcaption>
-                            <h3>Bed room</h3>
-                            
-                        </figcaption>
-                    </figure>
-                    
-                </div>
-                <div class="plan_form" id="plan3">
-                    <figure>
-                        <div class="gal_img">
-                            <img src="images/sitting_room4.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Sitting room</h3>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan4">
-                    <figure>
-                        <div class="gal_img">
-                            <img src="images/pool2.jpeg" alt="projects">
-                        </div>
-                        <figcaption>
-                            <h3>Swimming Pool</h3>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
-                
-            <a id="moreProjects" href="gallery.php" title="View more projects">View more <i class="fas fa-angle-double-right"></i></a>
+                        <div class="gallery_img">
+                            <img src="<?php echo 'media/'.$photo->photo?>" alt="gallery">
 
+                        </div>
+                        <figcaption>
+                            <h3><?php echo $photo->title?></h3>
+                            
+                        </figcaption>
+                    </figure>
+                </div>
+                <?php endforeach?>
+                
+                
+                <a id="moreProjects" href="gallery.php" title="View more photos">View more <i class="fas fa-angle-double-right"></i></a>
             </div>
         </Section>
         <!-- <section id="testimonies">

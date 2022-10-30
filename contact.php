@@ -65,6 +65,10 @@
                     <p>Visit us at #3 Edegbe Avenue, Off Elema Palace, GRA, Benin city Edo state</p>
                 </div>
                 <div class="add_info">
+                    <i class="fas fa-street-view"></i>
+                    <p>Or visit us at Mabel Erewa Crescent, Off Etete road, GRA, Benin city Edo state</p>
+                </div>
+                <div class="add_info">
                     <i class="fas fa-phone"></i>
                     <p>You can also call us on these numbers:<br> +234 903 057 0863</p>
                 </div>

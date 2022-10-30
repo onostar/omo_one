@@ -1,3 +1,6 @@
+<?php
+    require "controller/connections.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,201 +51,30 @@
         </div> -->
     </section>
     <main>
-    <Section id="plans" class="galleria">
-            
-            <p class="first_p">Discover some of our exciting scenes</p>
+    <Section id="gallery">
+            <h3 class="plans_title">Scenes and media</h3>
+            <!-- <h2>Photos and media</h2> -->
+            <!-- <p class="first_p">Discover some of our Exciting scenes</p> -->
             <div class="plans">
-            <div class="plan_form" id="plan1">
-                    <figure><a href="images/pool2.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/pool2.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Swimming pool</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan2">
-                    <figure><a href="images/omo_one2.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/omo_one2.jpeg" alt="reception">
-                        </div>
-                        <figcaption>
-                            <h3>Main Building</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                    
-                </div>
-                <div class="plan_form" id="plan3">
-                    <figure><a href="images/kitchen2.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/kitchen2.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Apartment Kitchen</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan4">
-                    <figure><a href="images/lounge.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/lounge.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Lounge/bar</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan1">
-                    <figure><a href="images/single_toilet.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/single_toilet.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Bathroom</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan2">
-                    <figure><a href="images/bed_room2.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/bed_room2.jpeg" alt="reception">
-                        </div>
-                        <figcaption>
-                            <h3>Bed room</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                    
-                </div>
-                <div class="plan_form" id="plan3">
-                    <figure><a href="images/sitting_room4.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/sitting_room4.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Sitting room</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan4">
-                    <figure><a href="images/pool3.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/pool3.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Lounge/bar</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan5">
-                    <figure><a href="images/balcony.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/balcony.jpeg" alt="projects">
-                        </div>
-                        <figcaption>
-                            <h3>Balcony</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan6">
-                    <figure><a href="images/sitting_room5.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/sitting_room5.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Sitting room</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan6">
-                    <figure><a href="images/sitting_room3.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/sitting_room3.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Sitting room</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan5">
-                    <figure><a href="images/kitchen.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/kitchen.jpeg" alt="Gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Kitchen</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan6">
-                    <figure><a href="images/bathroom.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/bathroom.jpeg" alt="Gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Bathroom</h3>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan6">
-                    <figure><a href="images/bed_room.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/bed_room.jpeg" alt="gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Bed room</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan6">
-                    <figure><a href="images/apartment_entrance.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/apartment_entrance.jpeg" alt="Gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Apartment entrance</h3>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan6">
-                    <figure><a href="images/dinning2.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/dinning2.jpeg" alt="Gallery">
-                        </div>
-                        <figcaption>
-                            <h3>Dinning</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-                <div class="plan_form" id="plan6">
-                    <figure><a href="images/reception.jpeg" target="_blank">
-                        <div class="gal_img">
-                            <img src="images/reception.jpeg" alt="projects">
-                        </div>
-                        <figcaption>
-                            <h3>Reception</h3>
-                            
-                        </figcaption></a>
-                    </figure>
-                </div>
-            
+                <?php 
+                    $get_photos = $connectdb->prepare("SELECT * FROM gallery ORDER BY post_date DESC LIMIT 8");
+                    $get_photos->execute();
+                    $photos = $get_photos->fetchAll();
+                    foreach($photos as $photo):
+                ?>
+                <div class="plan_form">
+                    <figure>
+                        <div class="gallery_img">
+                            <img src="<?php echo 'media/'.$photo->photo?>" alt="gallery">
 
+                        </div>
+                        <figcaption>
+                            <h3><?php echo $photo->title?></h3>
+                            
+                        </figcaption>
+                    </figure>
+                </div>
+                <?php endforeach?>
             </div>
         </Section>
     </main>

@@ -152,13 +152,12 @@ document.addEventListener("DOMContentLoaded", function(){
     document.querySelectorAll(".page_navs").forEach(navs => {
         navs.onclick = function(){
             showPage(this.dataset.page);
-            $("#paid_receipt").hide();
-            document.getElementById("profit").style.display = "none";
+            // $("#paid_receipt").hide();
+            // document.getElementById("profit").style.display = "none";
             
         }
     })
 })
-
 // display login on mobile
 $(document).ready(function(){
     $("#mobile_log #loginDiv").click(function(){
@@ -634,3 +633,25 @@ $(document).ready(function(){
         $("#request_form").show();
     })
 })
+
+/* delete project */
+function deleteProject(project){
+    let delProject = confirm("Do you want to delete this project?", "");
+    if(delProject){
+        window.open("../controller/delete_project.php?project="+project, "_parent");
+    }
+}
+/* delete news updates */
+function deleteArticle(news){
+    let delNews = confirm("Do you want to delete this post?", "");
+    if(delNews){
+        window.open("../controller/delete_article.php?news="+news, "_parent");
+    }
+}
+/* delete photo */
+function deletePhoto(photo){
+    let delPhoto = confirm("Do you want to delete this photo?", "");
+    if(delPhoto){
+        window.open("../controller/delete_photo.php?photo="+photo, "_parent");
+    }
+}

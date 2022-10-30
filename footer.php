@@ -15,6 +15,13 @@
                             <p>We are located at #3 Edegbe Avenue, Off Elema Palace, GRA, Benin city Edo state</p>
                         </div>
                     </div>
+                    <div class="address">
+                        <i class="fas fa-street-view"></i>
+                        <div class="addtext">
+                            <!-- <h4>Head office:</h4> -->
+                            <p>Mabel Erewa Crescent, Off Etete road, GRA, Benin city Edo state</p>
+                        </div>
+                    </div>
                     <div class="address phone">
                         <i class="fas fa-tty"></i>
                         <div class="addtext">
@@ -183,7 +190,7 @@
                     <select name="room" id="room">
                         <option value=""selected>Select Room type</option>
                         <option value="Single room">Single room (₦20,000)</option>
-                        <option value="Apartment">Apartment (₦100,000)</option>
+                        <option value="Apartment">Apartment (₦120,000)</option>
                     </select>
                 </div>
                 <div class="data">
