@@ -52,29 +52,34 @@
     </section>
     <main>
     <Section id="gallery">
-            <h3 class="plans_title">Scenes and media</h3>
+            <h3 class="plans_title">Our Gallery</h3>
             <!-- <h2>Photos and media</h2> -->
-            <!-- <p class="first_p">Discover some of our Exciting scenes</p> -->
+            <p class="first_p">Discover some of our Exciting scenes</p>
             <div class="plans">
                 <?php 
-                    $get_photos = $connectdb->prepare("SELECT * FROM gallery ORDER BY post_date DESC LIMIT 8");
-                    $get_photos->execute();
-                    $photos = $get_photos->fetchAll();
-                    foreach($photos as $photo):
+                    $get_photos = "SELECT * FROM gallery ORDER BY post_date DESC";
+                    // $get_photos->execute();
+                    $photos = $connectdb->query($get_photos);
+                    if($photos->num_rows > 0){
+                        while($photo = $photos->fetch_assoc()){
+
+                        
                 ?>
                 <div class="plan_form">
                     <figure>
                         <div class="gallery_img">
-                            <img src="<?php echo 'media/'.$photo->photo?>" alt="gallery">
+                            <img src="<?php echo 'media/'.$photo['photo']?>" alt="gallery">
 
                         </div>
                         <figcaption>
-                            <h3><?php echo $photo->title?></h3>
+                            <h3><?php echo $photo['title']?></h3>
                             
                         </figcaption>
                     </figure>
                 </div>
-                <?php endforeach?>
+                <?php }}?>
+                
+                
             </div>
         </Section>
     </main>

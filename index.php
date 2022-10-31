@@ -214,9 +214,20 @@
             </div>
         </section>
         
-        <!-- video -->
+        <!-- video tour-->
         <section id="video_story">
-            <video src="images/omo_one_vid.mp4" poster="images/omo_one.jpeg"controls></video>
+            <h2>Take a tour</h2>
+            <div class="vids">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZrHCp7aGvtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ttvH4C-JgQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JHYz1t29mK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dEPaACwOSmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cRLllprjbuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7j_4I73AVKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CneaafbpbCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ybO2aNcG32g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- <video src="images/omo_one_vid.mp4" poster="images/omo_one.jpeg"controls></video> -->
         </section>
        
         <!-- amenities -->
@@ -278,8 +289,8 @@
                 <a href="contact.php">Visit us <i class="fa-solid fa-headset"></i></a>
             </div>
             <div class="invest_img" id="hero2">
-                <video src="images/omo_one_etete.mp4" poster="images/omo_one5.jpeg"controls></video>
-
+                <!-- <video src="images/omo_one_etete.mp4" poster="images/omo_one5.jpeg"controls></video> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/trwdcuMcdMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <!-- why choose us -->
@@ -494,24 +505,27 @@
             <p class="first_p">Discover some of our Exciting scenes</p>
             <div class="plans">
                 <?php 
-                    $get_photos = $connectdb->prepare("SELECT * FROM gallery ORDER BY post_date DESC LIMIT 8");
-                    $get_photos->execute();
-                    $photos = $get_photos->fetchAll();
-                    foreach($photos as $photo):
+                    $get_photos = "SELECT * FROM gallery ORDER BY post_date DESC LIMIT 8";
+                    // $get_photos->execute();
+                    $photos = $connectdb->query($get_photos);
+                    if($photos->num_rows > 0){
+                        while($photo = $photos->fetch_assoc()){
+
+                        
                 ?>
                 <div class="plan_form">
                     <figure>
                         <div class="gallery_img">
-                            <img src="<?php echo 'media/'.$photo->photo?>" alt="gallery">
+                            <img src="<?php echo 'media/'.$photo['photo']?>" alt="gallery">
 
                         </div>
                         <figcaption>
-                            <h3><?php echo $photo->title?></h3>
+                            <h3><?php echo $photo['title']?></h3>
                             
                         </figcaption>
                     </figure>
                 </div>
-                <?php endforeach?>
+                <?php }}?>
                 
                 
                 <a id="moreProjects" href="gallery.php" title="View more photos">View more <i class="fas fa-angle-double-right"></i></a>

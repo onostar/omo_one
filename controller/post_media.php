@@ -10,11 +10,10 @@
         $photo_folder = "../media/".$photo;
         $photo_size = $_FILES['photo']['size'];
         
-        $check_status = $connectdb->prepare("SELECT * FROM gallery WHERE title = :title");
-        $check_status->bindvalue("title", $subject);
-        $check_status->execute();
+        $check_status = "SELECT * FROM gallery WHERE title = '$subject'";
+        $check = $connectdb->query($check_status);
 
-        if($check_status->rowCount() > 0){
+        if($check->num_rows > 0){
             $_SESSION['error'] = "$subject already posted!";
             header("Location: ../views/admin.php");
         }else{
@@ -23,12 +22,10 @@
                 header("Location: ../admin/admin.php");
             }else{
                 if(move_uploaded_file($_FILES['photo']['tmp_name'], $photo_folder)){
-                    $insert_news = $connectdb->prepare("INSERT INTO gallery (title, photo) VALUES(:title, :photo)");
-                    $insert_news->bindvalue("title", $subject);
-                    $insert_news->bindvalue("photo", $photo);
-                    $insert_news->execute();
+                    $insert_news = "INSERT INTO gallery (title, photo) VALUES('$subject', '$photo')";
+                    $insert = $connectdb->query($insert_news);
 
-                    if($insert_news){
+                    if($insert){
                         $_SESSION['success'] = "$subject posted successfully!";
                         /* send notification and email */
                         //get receipients and send message

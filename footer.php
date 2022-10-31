@@ -19,7 +19,7 @@
                         <i class="fas fa-street-view"></i>
                         <div class="addtext">
                             <!-- <h4>Head office:</h4> -->
-                            <p>Mabel Erewa Crescent, Off Etete road, GRA, Benin city Edo state</p>
+                            <p>#20 Mabel Erewa Street, Off Etete road, GRA, Benin city Edo state</p>
                         </div>
                     </div>
                     <div class="address phone">

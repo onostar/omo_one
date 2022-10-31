@@ -10,20 +10,18 @@
         $username = ucwords(htmlspecialchars(stripslashes($_POST['username'])));
         $password = htmlspecialchars(stripslashes($_POST['user_password']));
 
-        $get_user = $connectdb->prepare("SELECT * FROM users WHERE username = :username AND user_password = :user_password");
-        $get_user->bindvalue("username", $username);
-        $get_user->bindvalue("user_password", $password);
-        $get_user->execute();
+        $get_user = "SELECT * FROM users WHERE username = '$username' AND user_password = '$password'";
+        $result = $connectdb->query($get_user);
 
-        if($get_user->rowCount() > 0){
+        if($result->num_rows > 0){
             $_SESSION['user'] = $username;
-            $users = $get_user->fetchAll();
-            foreach($users as $user){
+            while($user = $result->fetch_assoc()){
+
                 if($username === "Admin"){
                     $_SESSION['success'] = "Welcome Admin";
                     header("Location: ../admin/admin.php");
                 }else{
-                    $_SESSION['success'] = "Welcome " . $user->last_name;
+                    $_SESSION['success'] = "Welcome " . $user['last_name'];
                     header("Location: ../views/users.php");
                 }
             }

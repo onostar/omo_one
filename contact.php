@@ -66,7 +66,7 @@
                 </div>
                 <div class="add_info">
                     <i class="fas fa-street-view"></i>
-                    <p>Or visit us at Mabel Erewa Crescent, Off Etete road, GRA, Benin city Edo state</p>
+                    <p>Or visit us at #20 Mabel Erewa Street, Off Etete road, GRA, Benin city Edo state</p>
                 </div>
                 <div class="add_info">
                     <i class="fas fa-phone"></i>

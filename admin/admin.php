@@ -152,9 +152,9 @@
                                 <i class="fas fa-photo-video"></i>
                                 <p>
                                     <?php
-                                        $get_gallery = $connectdb->prepare("SELECT * FROM gallery");
-                                        $get_gallery->execute();
-                                        echo $get_gallery->rowCount()." Photos";
+                                        $get_gallery = "SELECT * FROM gallery";
+                                        $gallery = $connectdb->query($get_gallery);
+                                        echo $gallery->num_rows." Photos";
                                     ?>
                                 </p>
                             </div>
@@ -167,9 +167,9 @@
                                 <i class="fas fa-newspaper"></i>
                                 <p>
                                     <?php
-                                        $get_gallery = $connectdb->prepare("SELECT * FROM news_events");
-                                        $get_gallery->execute();
-                                        echo $get_gallery->rowCount();
+                                        $get_gallery = "SELECT * FROM news_events";
+                                        $events = $connectdb->query($get_gallery);
+                                        echo $events->num_rows;
                                     ?>
                                 </p>
                             </div>
@@ -202,73 +202,26 @@
                     <!-- uploaded images -->
                     <div class="uploaded">
                         <?php
-                            $get_images = $connectdb->prepare("SELECT * FROM gallery ORDER BY post_date DESC");
-                            $get_images->execute();
-                            $photos = $get_images->fetchAll();
-                            foreach($photos as $photo):
+                            $get_images = "SELECT * FROM gallery ORDER BY post_date DESC";
+                            $photos = $connectdb->query($get_images);
+                            while($photo = $photos->fetch_assoc()){
                         ?>
                         <figure>
                             <div class="photo">
-                                <img src="<?php echo '../media/'.$photo->photo?>" alt="">
+                                <img src="<?php echo '../media/'.$photo['photo']?>" alt="">
 
                             </div>
                             <figcaption>
-                                <h4><?php echo $photo->title?></h4>
-                                <a href="javascript:void(0)" title="Delete Photo" onclick= "deletePhoto('<?php echo $photo->media_id?>')"><i class="fas fa-trash"></i></a>
+                                <h4><?php echo $photo['title']?></h4>
+                                <a href="javascript:void(0)" title="Delete Photo" onclick= "deletePhoto('<?php echo $photo['media_id']?>')"><i class="fas fa-trash"></i></a>
                             </figcaption>
                         </figure>
-                        <?php endforeach?>
+                        <?php }?>
                     </div>
                 </div>
                 
-                <!-- post news and updates -->
-                <div id="events_news"class="displays">
-                    <div class="info"></div>
-                    <div class="add_user_form" id="brd_mess">
-                        <h3>Post events/news</h3>
-                        <form method="POST" action="../controller/post_news.php" enctype="multipart/form-data">
-                            <div class="inputs">
-                                <div class="data">
-                                    <label for="subject">Title</label><br>
-                                    <input type="text" name="title" id="title" placeholder="Event/news title" required>
-                                </div>
-                                <div class="data">
-                                    <label for="event_img">Upload Cover image (not more than 300kb)</label>
-                                    <input type="file" name="photo" id="photo">
-                                </div>
-                                
-                            </div>
-                            <div class="inputs">
-                                <div class="data" style="width:100%; margin-top:0px;">
-                                    <label for="broadcast_message">Details</label><br>
-                                    <textarea name="details" id="details" cols="40" rows="5"></textarea>
-                                </div>
-                            </div>
-                            <button type="submit" id="post_event" name="post_event">Post <i class="fas fa-paper-plane"></i></button>
-                        </form>
-                    </div>
-                    <!-- uploaded events and news -->
-                    <div class="uploaded">
-                        <?php
-                            $get_images = $connectdb->prepare("SELECT * FROM news_events ORDER BY post_date DESC");
-                            $get_images->execute();
-                            $photos = $get_images->fetchAll();
-                            foreach($photos as $photo):
-                        ?>
-                        <figure>
-                            <div class="photo">
-                                <img src="<?php echo '../media/'.$photo->photo?>" alt="event">
-
-                            </div>
-                            <figcaption>
-                                <h4><?php echo $photo->title?></h4>
-                                <!-- <p><?php echo $photo->details?></p> -->
-                                <a href="javascript:void(0)" title="Delete Event" onclick="deleteArticle('<?php echo $photo->article_id?>')"><i class="fas fa-trash"></i></a>
-                            </figcaption>
-                        </figure>
-                        <?php endforeach?>
-                    </div>
-                </div>
+                
+                
             </section>
 
         </div>
