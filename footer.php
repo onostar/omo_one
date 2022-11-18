@@ -186,11 +186,25 @@
                     <input type="text" name="home_address" id="home_address" placeholder="Your residential address" required>
                 </div> 
                 <div class="data">
-                    <label for="room_type">Room category</label>
+                    <label for="room_type">Select Location</label>
+                    <select name="room" id="room" onchange="getRooms(this.value)">
+                        <option value=""selected>Select apartment location</option>
+                        <option value="Omo-one, Elema">Omo-one, Elema</option>
+                        <option value="Omo-one, Etete">Omo-one, Etete</option>
+                    </select>
+                </div>
+                <div class="data room_category" id="elema">
+                    <label for="room_type">Category</label>
                     <select name="room" id="room">
                         <option value=""selected>Select Room type</option>
                         <option value="Single room">Single room (₦20,000)</option>
                         <option value="Apartment">Apartment (₦120,000)</option>
+                    </select>
+                </div>
+                <div class="data room_category" id="etete">
+                    <label for="room_type">Category</label>
+                    <select name="room" id="room">
+                        <option value="Apartment" selected>Apartment (₦100,000)</option>
                     </select>
                 </div>
                 <div class="data">

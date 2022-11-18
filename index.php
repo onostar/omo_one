@@ -160,11 +160,11 @@
                     <input type="date" name="check_out" id="check_out" required>
                 </div>
                 <div class="data">
-                    <label for="checkOut">Select room</label>
+                    <label for="checkOut">Choose a location</label>
                     <select name="room" id="room">
-                        <option value=""selected>Select Room type</option>
-                        <option value="Single room">Single room (₦20,000)</option>
-                        <option value="Apartment">Apartment (₦120,000)</option>
+                        <option value=""selected>Select Location</option>
+                        <option value="Omo-one, Elema">Omo-one, Elema</option>
+                        <option value="Omo-one, Etete">Omo-one, Etete</option>
                     </select>
                 </div>
                 <div class="data">
@@ -193,14 +193,14 @@
                     celebrate life</h2>
                 <div class="notes">
                     <div class="notes_1">
-                        <p>Imagine a utopia where all of your wishes are granted and all of your desires are satisfied. From our magnificent swimming pools, lounges and bar to our sophisticated rooms, Pmp-one offers unrivalled luxury. </p><br>
-                        <p>In this luxurious getaway, no expense has been spared. Our contemporary luxury Apartment can accommodate more than 10 guests at a time. From the grandness of the Great Rooms to the customised tranquillity of each suite, there's something for everyone.
+                        <p>Imagine a utopia where all of your wishes are granted and all of your desires are satisfied. From our magnificent swimming pools, lounges and bar to our sophisticated rooms, Omo-one offers unrivalled luxury. </p><br>
+                        <p>In this luxurious getaway, no expense has been spared. Our contemporary luxury Apartments across our branches can accommodate more than 10 guests at a time. From the grandness of the Great Rooms to the customised tranquillity of each suite, there's something for everyone.
                         <br>
                        <!--  Our upstream business combines technological and environmentally-friendly innovations and the effective use of technology to maximize mature fields, discover new resources and meet the world’s growing demand for energy --></p>
                         <a href="about.php"class="about_btn">Read more <i class="fas fa-angle-double-right"></i></a>
                     </div>
                     <div class="notes_2">
-                        <p>You will receive special privileges and perks across many parts of our apartment. Here is what we offers every time you stay with us:</p>
+                        <p>You will receive special privileges and perks across many parts of our apartment. Here is what we offer every time you stay with us:</p>
                         <ul>
                             <li><i class="fas fa-check"></i> Reliability and performance</li>
                             <li><i class="fas fa-check"></i> Dedicated Staffs</li>
@@ -213,7 +213,81 @@
                 </div>
             </div>
         </section>
-        
+         <!-- rooms -->
+         <section id="rooms">
+            <div class="rooms_intro">
+                <div class="rooms_head">
+                    <div class="hrh3">
+                        <hr>
+                        <h3>Accomodation</h3>
+                    </div>
+                    <h2>Room / Suits</h2>
+                </div>
+                <div class="rooms_head" id="head_note">
+                    <p>Our Apartmens offers over 10 single rooms and Duplexes across our various branches from which you can choose from. Select a category below to view or </p>
+                    <a href="gallery.php" title="Photos of our rooms">View our Gallery</a>
+                </div>
+            </div>
+            <div class="rooms">
+                <figure>
+                    <a href="single_room.php" title="View room details">
+                        <div class="room_img">
+                            <img src="images/single_room2.jpeg" alt="Single room">
+                        </div>
+                        <figcaption>
+                            <h3>Single room, Elema</h3>
+                            <p>₦20,000 a Night</p>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="apartments.php" title="View room details">
+                        <div class="room_img">
+                            <img src="images/sitting_room5.jpeg" alt="apartments">
+                        </div>
+                        <figcaption>
+                            <h3>Apartment, Elema</h3>
+                            <p>₦120,000 a Night</p>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="apartments.php" title="View room details">
+                        <div class="room_img">
+                            <img src="images/photo6.jpeg" alt="Apartment">
+                        </div>
+                        <figcaption>
+                            <h3>Apartment, Etete</h3>
+                            <p>₦100,000 a Night</p>
+                        </figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="single_room.php" title="View room details">
+                        <div class="room_img">
+                            <img src="images/sitting_room2.jpeg" alt="Diamond room">
+
+                        </div>
+                        <figcaption>
+                            <h3>Apartment, Elema</h3>
+                            <p>₦120,000 a Night</p>
+                        </figcaption>
+                    </a>
+                </figure>
+                
+                <figure>
+                    <a href="apartments.php" title="View room details">
+                        <div class="room_img">
+                            <img src="images/photo2.jpeg" alt="Apartments">
+                        </div>
+                        <figcaption>
+                            <h3>Apartment, etete</h3>
+                            <p>₦100,000 a Night</p>
+                        </figcaption>
+                    </a>
+                </figure>
+            </div>
+        </section>
         <!-- video tour-->
         <section id="video_story">
             <h2>Take a tour</h2>
@@ -285,7 +359,8 @@
             <div class="intro">
                 <p>Now available for booking</p>
                 <h2>Omo-one Apartments, Etete</h2>
-                <p>Omo-one Apartments has extended its business of hospitality and comfortability to etete, GRA Benin city. With increased security, comfort, and relaxation.<br> Visit is us now at Mabel Erewa crescent, Etete, GRA Benin city, Edo state</p>
+                <p>Omo-one Apartments has extended its business of hospitality and comfortability to etete, GRA Benin city. With increased security, comfort, and relaxation.<br><br>We have 5 fully equiped and furnished duplexes designed for your total comfort and satisfaction. Each duplex is equiped with very fast and free internet service, a massive kitchen and all neccessary amenities needed by our guests. <br>
+                Visit us now at Mabel Erewa Street, Etete, GRA Benin city, Edo state. See the video below for more decsrription.</p>
                 <a href="contact.php">Visit us <i class="fa-solid fa-headset"></i></a>
             </div>
             <div class="invest_img" id="hero2">
@@ -373,80 +448,7 @@
             </div>
         </section>
         
-        <!-- rooms -->
-        <section id="rooms">
-            <div class="rooms_intro">
-                <div class="rooms_head">
-                    <div class="hrh3">
-                        <hr>
-                        <h3>Accomodation</h3>
-                    </div>
-                    <h2>Room / Suits</h2>
-                </div>
-                <div class="rooms_head" id="head_note">
-                    <p>Our hotel offers over 10 single rooms and Apartments from which you can choose from</p>
-                    <a href="gallery.php" title="Photos of our rooms">View Gallery</a>
-                </div>
-            </div>
-            <div class="rooms">
-                <figure>
-                    <a href="single_room.php" title="View room details">
-                        <div class="room_img">
-                            <img src="images/single_room2.jpeg" alt="Single room">
-                        </div>
-                        <figcaption>
-                            <h3>Single room</h3>
-                            <p>₦20,000 a Night</p>
-                        </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="apartments.php" title="View room details">
-                        <div class="room_img">
-                            <img src="images/sitting_room3.jpeg" alt="apartments">
-                        </div>
-                        <figcaption>
-                            <h3>Apartment</h3>
-                            <p>₦120,000 a Night</p>
-                        </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="single_room.php" title="View room details">
-                        <div class="room_img">
-                            <img src="images/single_room.jpeg" alt="Diamond room">
-
-                        </div>
-                        <figcaption>
-                            <h3>Single room</h3>
-                            <p>₦20,000 a Night</p>
-                        </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="apartments.php" title="View room details">
-                        <div class="room_img">
-                            <img src="images/photo6.jpeg" alt="Apartment">
-                        </div>
-                        <figcaption>
-                            <h3>Apartment</h3>
-                            <p>₦120,000 a Night</p>
-                        </figcaption>
-                    </a>
-                </figure>
-                <figure>
-                    <a href="apartments.php" title="View room details">
-                        <div class="room_img">
-                            <img src="images/sitting_room5.jpeg" alt="Apartments">
-                        </div>
-                        <figcaption>
-                            <h3>Apartment</h3>
-                            <p>₦120,000 a Night</p>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-        </section>
+       
         
         <!-- hero 2 -->
         <section class="investment">

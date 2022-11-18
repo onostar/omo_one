@@ -655,3 +655,19 @@ function deletePhoto(photo){
         window.open("../controller/delete_photo.php?photo="+photo, "_parent");
     }
 }
+
+// show room categories when locatio is selected
+
+function getRooms(location){
+    let cat_loc = location
+    if(cat_loc == "Omo-one, Elema"){
+        $("#elema").show();
+        $("#etete").hide();
+    }else if(cat_loc == "Omo-one, Etete"){
+        $("#etete").show();
+        $("#elema").hide();
+    }else{
+        $("etete").hide();
+        $("elema").hide();
+    }
+}

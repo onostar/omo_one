@@ -14,7 +14,7 @@
     <meta name="og:image" property="og:image" itemprop="image" content="images/logo.jpg">
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
-    <title>Omo-One Apartments | Apartments</title>
+    <title>Omo-One Apartments | Apartments, Elema</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
@@ -40,7 +40,7 @@
                         <img src="images/sitting_room5.jpeg" alt="omo-one">
                     </div>
                     <div class="taglines">
-                        <h2>Apartment</h2>
+                        <h2>Apartment, Elema</h2>
                         <!-- <p>We bring exceptional care close to you. Consult a Doctor any time, any day.</p> -->
                         <!-- <div class="btns">
                             <a href="javascrip:void(0);" class="showRequest">Schedule an Appointment Now</a>
@@ -58,17 +58,23 @@
     <main id="roomsMain">
         <section id="room_gallery">
             <div class="room_frame" id="room_frame">
-                <img src="images/photo6.jpeg" alt="Apartment">
+                <img src="images/sitting_room2.jpeg" alt="Apartment">
             </div>
             <div class="room_thumbnails">
                 <figure>
-                    <img src="images/photo8.jpeg" alt="Apartment">
+                    <img src="images/sitting_room4.jpeg" alt="Apartment">
                 </figure>
                 <figure>
                     <img src="images/bed_room2.jpeg" alt="Apartment">
                 </figure>
                 <figure>
                     <img src="images/bathroom.jpeg" alt="Apartment">
+                </figure>
+                <figure>
+                    <img src="images/bed_room4.jpeg" alt="Apartment">
+                </figure>
+                <figure>
+                    <img src="images/kitchen3.jpeg" alt="Apartment">
                 </figure>
             </div>
             <div id="room_details">
@@ -163,16 +169,16 @@
                             </figcaption>
                         </a>
                     </figure>
-                    <!-- <figure>
-                        <a href="crystal_room.php" title="View Other room">
+                    <figure>
+                        <a href="Apartment_etete.php" title="View Other room">
                             <div class="other_img">
-                                <img src="images/room2.webp" alt="Other rooms">
+                                <img src="images/photo11.jpeg" alt="Other rooms">
                             </div>
                             <figcaption>
-                                <h3>Crystal room</h3>
+                                <h3>Apartment, Etete</h3>
                             </figcaption>
                         </a>
-                    </figure> -->
+                    </figure>
                     
                 </div>
             </div>

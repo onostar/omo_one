@@ -14,7 +14,7 @@
     <meta name="og:image" property="og:image" itemprop="image" content="images/logo.jpg">
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
-    <title>Omo-One Apartments | Single rooms</title>
+    <title>Omo-One Apartments | Etete</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
@@ -32,14 +32,15 @@
     </div> -->
     <!-- <div class="main"> -->
         <?php include "header.php"?>
+       
         <div id="slider">
             <div class="about_banner">
                 <div class="slide">
                     <div class="banner_img">
-                        <img src="images/single_room2.jpeg" alt="omo-one">
+                        <img src="images/sitting_room5.jpeg" alt="omo-one">
                     </div>
                     <div class="taglines">
-                        <h2>Single room, Elema</h2>
+                        <h2>Apartment, Etete</h2>
                         <!-- <p>We bring exceptional care close to you. Consult a Doctor any time, any day.</p> -->
                         <!-- <div class="btns">
                             <a href="javascrip:void(0);" class="showRequest">Schedule an Appointment Now</a>
@@ -57,31 +58,31 @@
     <main id="roomsMain">
         <section id="room_gallery">
             <div class="room_frame" id="room_frame">
-                <img src="images/single_room.jpeg" alt="Single room">
+                <img src="images/photo6.jpeg" alt="Apartment">
             </div>
             <div class="room_thumbnails">
                 <figure>
-                    <img src="images/single_toilet.jpeg" alt="Single room">
+                    <img src="images/photo8.jpeg" alt="Apartment">
                 </figure>
                 <figure>
-                    <img src="images/single_room2.jpeg" alt="Single room">
+                    <img src="images/photo1.jpeg" alt="Apartment">
                 </figure>
                 <figure>
-                    <img src="images/single_room.jpeg" alt="Single room">
+                    <img src="images/photo18.jpeg" alt="Apartment">
                 </figure>
                 <figure>
-                    <img src="images/photo9.jpeg" alt="Single room">
+                    <img src="images/photo5.jpeg" alt="Apartment">
                 </figure>
                 <figure>
-                    <img src="images/single_room.jpeg" alt="Single room">
+                    <img src="images/photo7.jpeg" alt="Apartment">
                 </figure>
             </div>
             <div id="room_details">
-                <h4>₦20,000 a Night</h4>
-                <h2>Single Rooms</h2>
-                <p>All of our rooms evoke a feeling of comfort and convenience combined with contemporary urban design, charm, and high-tech amenities tailored to the business traveler's needs.
-                <br><br>
-                Our unique rooms feature complimentary WIFI connection, LCD TV, telephone, individually adjustable air-conditioning, in-room safe (for laptops), luggage rack, toiletries kit, and en-suite bathroom with shower. Extra beds (rollaway or baby cot) are available upon request. All rooms are non-smoking.</p>
+                <h4>₦120,000 a Night</h4>
+                <h2>Apartments</h2>
+                <p>All of our rooms evoke a feeling of comfort and convenience combined with contemporary urban design, charm, and high-tech amenities tailored to the business traveler's needs.<br><br>
+
+                Our unique rooms feature complimentary WIFI connection, LCD TV, telephone, mini bar, individually adjustable air-conditioning, in-room safe (for laptops), luggage rack, toiletries kit, hairdryer, and en-suite bathroom with shower. Extra beds (rollaway or baby cot) are available upon request. All rooms are non-smoking.</p>
 
                 <div class="room_amenities">
                     <h3>Amenities</h3>
@@ -103,8 +104,8 @@
                             <p>High speed wifi</p>
                         </div>
                         <div class="facility">
-                            <i class="fas fa-shower"></i>
-                            <p>Shower</p>
+                            <i class="fas fa-bath"></i>
+                            <p>Bathtub with shower</p>
                         </div>
                         <!-- <div class="facility">
                             <i class="fas fa-balcony"></i>
@@ -159,22 +160,22 @@
                 <h2>More room types</h2>
                 <div class="other_rooms">
                     <figure>
+                        <a href="single_room.php" title="View other room">
+                            <div class="other_img">
+                                <img src="images/single_room.jpeg" alt="Other rooms">
+                            </div>
+                            <figcaption>
+                                <h3>Single room</h3>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
                         <a href="apartments.php" title="View other room">
                             <div class="other_img">
                                 <img src="images/sitting_room.jpeg" alt="Other rooms">
                             </div>
                             <figcaption>
                                 <h3>Apartment, Elema</h3>
-                            </figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="apartment_etete.php" title="View Other room">
-                            <div class="other_img">
-                                <img src="images/photo11.jpeg" alt="Other rooms">
-                            </div>
-                            <figcaption>
-                                <h3>Apartment, Etete</h3>
                             </figcaption>
                         </a>
                     </figure>
@@ -187,7 +188,7 @@
         <Section id="plans">
             
             <div class="plans">
-                <div class="plan_form" id="plan1">
+            <div class="plan_form" id="plan1">
                     <figure>
                         <div class="gal_img">
                             <img src="images/pool2.jpeg" alt="gallery">
@@ -232,6 +233,7 @@
                         </figcaption>
                     </figure>
                 </div>
+                
                 
             <a id="moreProjects" href="gallery.php" title="View more photos">More Gallery <i class="fas fa-angle-double-right"></i></a>
 
