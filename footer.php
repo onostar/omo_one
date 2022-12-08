@@ -186,8 +186,8 @@
                     <input type="text" name="home_address" id="home_address" placeholder="Your residential address" required>
                 </div> 
                 <div class="data">
-                    <label for="room_type">Select Location</label>
-                    <select name="room" id="room" onchange="getRooms(this.value)">
+                    <label for="room_location">Select Location</label>
+                    <select name="room_location" id="room_location" onchange="getRooms(this.value)">
                         <option value=""selected>Select apartment location</option>
                         <option value="Omo-one, Elema">Omo-one, Elema</option>
                         <option value="Omo-one, Etete">Omo-one, Etete</option>
@@ -195,7 +195,7 @@
                 </div>
                 <div class="data room_category" id="elema">
                     <label for="room_type">Category</label>
-                    <select name="room" id="room">
+                    <select name="room_type" id="room_type">
                         <option value=""selected>Select Room type</option>
                         <option value="Single room">Single room (₦20,000)</option>
                         <option value="Apartment">Apartment (₦120,000)</option>
@@ -203,7 +203,7 @@
                 </div>
                 <div class="data room_category" id="etete">
                     <label for="room_type">Category</label>
-                    <select name="room" id="room">
+                    <select name="room_type" id="room_type">
                         <option value="Apartment" selected>Apartment (₦100,000)</option>
                     </select>
                 </div>
@@ -226,7 +226,7 @@
     <!-- success message -->
     <?php
         if(isset($_SESSION['successful'])){
-            echo "<div class='successful'>".
+            echo "<div class='successful'><p><i class='fas fa-thumbs-up'></i></p>".
                $_SESSION['successful']. 
             "<button id='close_booking' onclick='closeBooking()'>OK</button>
             </div>";
